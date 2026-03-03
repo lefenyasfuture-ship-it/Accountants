@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Fenya Accountants</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav>
+<div class="logo">Fenya Accountants</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+<section class="contact-form">
+<h2>Contact Fenya Accountants</h2>
+<form id="contactForm">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+<button type="submit" class="btn">Send Message</button>
+</form>
+<p>Or contact directly via <a href="https://wa.me/2769999697">WhatsApp</a> or <a href="mailto:lefenyasfuture@gmail.com">Email</a></p>
+</section>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = this.name.value;
+  const email = this.email.value;
+  const message = this.message.value;
+  const whatsappMsg = encodeURIComponent(`Hello, my name is ${name}. ${message} (Email: ${email})`);
+  window.open(`https://wa.me/2769999697?text=${whatsappMsg}`, '_blank');
+});
+</script>
+</body>
+</html>

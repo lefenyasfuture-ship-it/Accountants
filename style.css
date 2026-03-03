@@ -1,0 +1,28 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{line-height:1.6;background:#f8f9fa;color:#333;}
+header{background:#0073e6;color:white;padding:15px 50px;display:flex;justify-content:space-between;align-items:center;}
+header nav ul{display:flex;list-style:none;gap:25px;}
+header nav ul li a{color:white;text-decoration:none;font-weight:500;}
+.hero{display:flex;align-items:center;justify-content:space-between;padding:80px 50px;background:#e0f0ff;}
+.hero-text{max-width:600px;animation:fadeSlideUp 1s ease-out forwards;}
+.hero-text h1{font-size:3rem;margin-bottom:20px;}
+.hero-text p{margin-bottom:30px;font-size:1.1rem;}
+.hero-image{max-width:500px;border-radius:15px;}
+.btn{background:linear-gradient(90deg,#0073e6,#00b894);color:white;padding:12px 25px;border-radius:8px;text-decoration:none;font-weight:500;transition:0.3s;}
+.btn:hover{background:linear-gradient(90deg,#005bb5,#009666);}
+.btn-secondary{background:#00b894;}
+.btn-secondary:hover{background:#009666;}
+.services-preview{padding:80px 50px;text-align:center;}
+.services-preview h2{margin-bottom:40px;font-size:2.2rem;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+.card{background:white;padding:20px;border-radius:15px;box-shadow:0 8px 15px rgba(0,0,0,0.1);transition:transform 0.3s ease,box-shadow 0.3s ease;}
+.card:hover{transform:translateY(-10px) scale(1.03);box-shadow:0 15px 25px rgba(0,0,0,0.2);}
+.card img{width:100%;border-radius:10px;margin-bottom:15px;}
+.card h3{margin-bottom:10px;font-size:1.3rem;}
+.card p{margin-bottom:15px;font-size:1rem;}
+footer{background:#0073e6;color:white;text-align:center;padding:20px;margin-top:50px;}
+footer a{color:white;text-decoration:underline;}
+.contact-form{padding:60px 50px;text-align:center;}
+.contact-form input,.contact-form textarea{width:100%;max-width:500px;margin-bottom:15px;padding:12px;border-radius:8px;border:1px solid #ccc;}
+.contact-form button{margin-top:10px;}
+@keyframes fadeSlideUp{0%{opacity:0;transform:translateY(30px);}100%{opacity:1;transform:translateY(0);}}
